@@ -6,7 +6,9 @@ document.getElementById("telegramForm").addEventListener("submit", function(e) {
   
     const token = "7792998616:AAFmqhMJri8rJpflwP7cTXrIc7USYbSI-QY";
     const chat_id = "1756985609";
+
     const message = `💬 Кохання, нова заявка з сайту:\n\n👩 Ім'я: ${name}\n📱 Телефон: ${phone}`;
+
   
     fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
       method: "POST",
