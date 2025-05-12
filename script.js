@@ -5,8 +5,8 @@ document.getElementById("telegramForm").addEventListener("submit", function(e) {
     const phone = document.getElementById("phone").value;
   
     const token = "7792998616:AAFmqhMJri8rJpflwP7cTXrIc7USYbSI-QY";
-    const chat_id = "40585373";
-    const message = `Кохання, нова заявка! Ім'я: ${name}, Телефон: ${phone}`;
+    const chat_id = "1756985609";
+    const message = `💬 Нова заявка з сайту:\n\n👩 Ім'я: ${name}\n📱 Телефон: ${phone}`;
   
     fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
       method: "POST",
@@ -20,12 +20,9 @@ document.getElementById("telegramForm").addEventListener("submit", function(e) {
     })
     .then(response => {
       if (response.ok) {
-        document.getElementById("resultMessage").textContent = "Заявка надіслана!";
+        document.getElementById("resultMessage").textContent = "✅ Заявка надіслана!";
       } else {
-        response.text().then(text => {
-          document.getElementById("resultMessage").textContent = `Помилка: ${text}`;
-          console.error("Помилка:", text);
-        });
+        document.getElementById("resultMessage").textContent = "❌ Сталася помилка. Спробуйте ще раз.";
       }
     });
   });
