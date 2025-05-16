@@ -6,7 +6,6 @@ document.getElementById("telegramForm").addEventListener("submit", function(e) {
   
     const token = "7792998616:AAFmqhMJri8rJpflwP7cTXrIc7USYbSI-QY";
     const chat_id = "1756985609";
-<
     const message = `💬 Кохання, нова заявка з сайту:\n\n👩 Ім'я: ${name}\n📱 Телефон: ${phone}`;
   
     fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
@@ -36,11 +35,10 @@ function showSlide(index) {
     slide.classList.toggle('active', i === index);
   });
 }
-<<<<<<< HEAD
+
 
 document.getElementById("menuToggle").addEventListener("click", function () {
   document.querySelector(".nav-links").classList.toggle('active');
 });
 
-=======
->>>>>>> 792ff53 (change reviws)
+
