@@ -35,3 +35,8 @@ function showSlide(index) {
     slide.classList.toggle('active', i === index);
   });
 }
+
+document.getElementById("menuToggle").addEventListener("click", function () {
+  document.querySelector(".nav-links").classList.toggle('active');
+});
+

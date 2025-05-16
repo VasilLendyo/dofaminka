@@ -100,50 +100,6 @@ h2{
   font-size: 16px;
 }
 
-.testimonials-slider{
-  padding: 40px 20px;
-  background: #fff05f;
-  border-radius: 20px;
-  text-align: center;
-}
-
-.testimonials-slider h2{
-  font-size: 20px;
-  margin-bottom: 20px;
-  color: #cc3366;
-}
-
-.slider{
-  position: relative;
-  max-width: 600px;
-  margin: 0 auto;
-  height: 150px;
-  overflow: hidden;
-}
-
-.slide{
-  position: absolute;
-  width: 100%;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-
-}
-
-.slide.active{
-  opacity: 1;
-}
-
-.slide p{
-  font-size: 18px;
-  color: #444;
-  margin-bottom: 10px;
-}
-
-.slide span{
-  font-style: italic;
-  color: #999;
-}
-
 footer {
   background-color: #f8bbd0;
   padding: 20px;
@@ -224,3 +180,123 @@ footer a:hover {
   background: #c2185b;
   transform: scale(1.05);
 }
+
+.main-header {
+  background-color: #fff0f5;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #c2185b;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 25px;
+}
+
+@media (min-width: 768px){
+  .navbar ul{
+    display: flex;
+  }
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #c2185b;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #fff0f5;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+.reviews-section {
+  padding: 60px 20px;
+  background-color: #fff0f5;
+  text-align: center;
+}
+
+.reviews-section h2 {
+  font-size: 32px;
+  color: #c2185b;
+  margin-bottom: 40px;
+}
+
+.reviews-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.review-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: left;
+  font-size: 18px;
+  color: #333;
+}
+
+.review-card p {
+  margin-bottom: 15px;
+}
+
+.review-card span {
+  font-style: italic;
+  color: #888;
+}
+
+
+
+
+
