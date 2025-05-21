@@ -100,64 +100,6 @@ h2{
   font-size: 16px;
 }
 
-<<<<<<< HEAD
-
-.testimonials-slider{
-  padding: 40px 20px;
-  background: #fff05f;
-  border-radius: 20px;
-  text-align: center;
-}
-
-.testimonials-slider h2{
-  font-size: 20px;
-  margin-bottom: 20px;
-  color: #cc3366;
-}
-
-.slider{
-  position: relative;
-  max-width: 600px;
-  margin: 0 auto;
-  height: 150px;
-  overflow: hidden;
-}
-
-.slide{
-  position: absolute;
-  width: 100%;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-
-}
-
-.slide.active{
-  opacity: 1;
-}
-
-.slide p{
-  font-size: 18px;
-  color: #444;
-  margin-bottom: 10px;
-}
-
-.slide span{
-  font-style: italic;
-  color: #999;
-}
-
-=======
->>>>>>> fa0993f (add menu and change reviews)
-footer {
-  background-color: #f8bbd0;
-  padding: 20px;
-  text-align: center;
-  font-size: 14px;
-  color: #333;
-  border-top: 2px solid #e91e63;
-  margin-top: 50px;
-} */
-
 .footer{
   background-color: #f8e1ec;
   padding: 40px 20px;
@@ -195,16 +137,6 @@ footer {
     height: 36px;
   }
 }
-
-/* footer a {
-  color: #d81b60;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-footer a:hover {
-  text-decoration: underline;
-} */
 
 .fade-in {
   opacity: 0;
