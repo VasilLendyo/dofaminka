@@ -100,7 +100,7 @@ h2{
   font-size: 16px;
 }
 
-footer {
+/* footer {
   background-color: #f8bbd0;
   padding: 20px;
   text-align: center;
@@ -108,9 +108,47 @@ footer {
   color: #333;
   border-top: 2px solid #e91e63;
   margin-top: 50px;
+} */
+
+.footer{
+  background-color: #f8e1ec;
+  padding: 40px 20px;
+  text-align: center;
+  color: #444;
+  margin-top: 60px;
+  border-top: 3px solid #c2185b;
 }
 
-footer a {
+.footer p{
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.social-buttons{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.social-btn img{
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.social-btn:hover img{
+  transform: scale(1.2);
+}
+
+@media (max-width: 600px){
+  .social-btn img{
+    width: 36px;
+    height: 36px;
+  }
+}
+
+/* footer a {
   color: #d81b60;
   text-decoration: none;
   font-weight: bold;
@@ -118,7 +156,7 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
-}
+} */
 
 .fade-in {
   opacity: 0;
