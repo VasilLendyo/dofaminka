@@ -21,6 +21,10 @@ document.getElementById("telegramForm").addEventListener("submit", function(e) {
     .then(response => {
       if (response.ok) {
         document.getElementById("resultMessage").textContent = "✅ Заявка надіслана!";
+        document.getElementById("telegramForm").requestFullscreen();
+        setTimeout(() => {
+          document.getElementById("resultMessege").textContent = "";
+        }, 5000);
       } else {
         document.getElementById("resultMessage").textContent = "❌ Сталася помилка. Спробуйте ще раз.";
       }

@@ -1,8 +1,14 @@
 *{
-  transition: all 0.2s ease-is-out;
+  transition: all 0.2s ease-in-out;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 body{
+  animation: fadeInBody 1s ease;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -12,6 +18,19 @@ body{
   padding: 40px;
   margin: 0;
 }
+
+
+@keyframes fadeInBody {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 h1{
   color: #e91e63;
@@ -95,7 +114,7 @@ h2{
   margin: 10px auto;
   max-width: 400px;
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   text-align: left;
   font-size: 16px;
 }
@@ -135,19 +154,6 @@ h2{
   .social-btn img{
     width: 36px;
     height: 36px;
-  }
-}
-
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1s ease-out forwards;
-}
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
 
