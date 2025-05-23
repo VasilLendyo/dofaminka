@@ -53,21 +53,6 @@ img{
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-a.button{
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #e91e63;
-  color: white;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: bold;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: background-color 0.3s ease;
-}
-
-a.button:hover{
-  background-color: #c2185b;
-}
 
 @media (max-width: 600px) {
   body{
@@ -86,12 +71,6 @@ a.button:hover{
   img{
     width: 100%;
     height: auto;
-  }
-
-  a.button{
-    width: 100%;
-    display: block;
-    box-sizing: border-box;
   }
 }
 
