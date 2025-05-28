@@ -46,3 +46,18 @@ document.getElementById("menuToggle").addEventListener("click", function () {
 });
 
 
+function toggleText(){
+  const shortText = document.getElementById("shortText");
+  const fullText = document.getElementById("fullText");
+  const button = document.getElementById("toggleBtn");
+
+  if(fullText.style.display === "none"){
+    fullText.style.display = "block";
+    shortText.style.display = "none";
+    button.textContent = "Сховати";
+  }else{
+    fullText.style.display = "none";
+    shortText.style.display = "block";
+    button.textContent = "Читати більше";
+  }
+}

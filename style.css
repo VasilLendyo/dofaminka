@@ -45,7 +45,26 @@ p{
 
 .about_me{
   font-size: 24px;
+  text-align: justify;
 }
+
+.text-container{
+  max-width: 500px;
+  margin: 20px auto;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+#toggleBtn{
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
 
 img{
   width: 400px;
@@ -212,7 +231,14 @@ h2{
 .logo-block{
   display: flex;
   align-items: center;
-  gap:10px;
+  gap:8px;
+  max-width: 100%;
+  flex-wrap: nowrap;
+}
+
+.logo-block:hover{
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
 }
 
 .logo-img{
@@ -221,10 +247,16 @@ h2{
   border-radius: 25px;
 }
 
+.logo-img:hover{
+  transform: rotate(30deg);
+  transition: transform 0.3s ease;
+}
+
 .logo {
-  font-size: 20px;
+  font-size: 1.5em;
   font-weight: bold;
   color: #e91e63;
+  white-space: nowrap;
 }
 
 .italic{
