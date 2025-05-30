@@ -44,15 +44,22 @@ p{
 }
 
 .about_me{
-  font-size: 24px;
-  text-align: justify;
+  font-size: 28px;
+  color: #444;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.about_me p{
+  font-size: 22px;
 }
 
 .text-container{
   max-width: 500px;
-  margin: 20px auto;
+  margin: 0 auto;
+  padding: 30px 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   font-family: sans-serif;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 #toggleBtn{
@@ -237,7 +244,7 @@ h2{
 }
 
 .logo-block:hover{
-  transform: scale(1.03);
+  transform: scale(1.1);
   transition: transform 0.3s ease;
 }
 
@@ -253,6 +260,7 @@ h2{
 }
 
 .logo {
+  font-family: 'Motserrat', sans-serif;
   font-size: 1.5em;
   font-weight: bold;
   color: #e91e63;
@@ -260,8 +268,11 @@ h2{
 }
 
 .italic{
-  font-size: 12px;
-  font-style: italic;
+  font-family: 'Pacifico', cursive;
+  font-size: 18px;
+  font-weight: normal;
+  text-transform: lowercase;
+  margin-left: -1px;
 }
 
 .navbar ul {
