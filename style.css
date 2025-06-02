@@ -11,9 +11,9 @@ body{
   animation: fadeInBody 1s ease;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fff0f5;
-  color: #333;
+  /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  /* background-color: #fff0f5; */
+  /* color: #333; */
   text-align: center;
   padding: 40px;
   margin: 0;
@@ -33,36 +33,40 @@ body{
 
 
 h1{
-  color: #e91e63;
+  /* color: #e91e63; */
   font-size: 36px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
-p{
-  font-size: 16px;
+hr{
+  width: 50px;
+  border: 2px solid #b3568b;
   margin-bottom: 20px;
 }
 
 .about_me{
-  font-size: 28px;
-  color: #444;
+  /* font-size: 28px; */
   font-family: 'Open Sans', sans-serif;
 }
 
 .about_me p{
   font-size: 22px;
+  color: #333;
+  /* margin-bottom: 1.2em; */
 }
 
 .text-container{
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 30px 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  font-family: sans-serif;
-  line-height: 1.6;
+  /* max-width: 500px; */
+  /* margin: 40px auto; */
+  /* padding: 30px; */
+  /* box-shadow: 0 4px 10px rgba(0,0,0,0.05); */
+  text-align: left;
+  line-height: 1.1;
+  /* background-color: #fffaf5; */
+  /* border-radius: 16px; */
 }
 
-#toggleBtn{
+/* #toggleBtn{
   margin-top: 10px;
   padding: 6px 12px;
   background-color: #e91e63;
@@ -70,7 +74,7 @@ p{
   border: none;
   border-radius: 8px;
   cursor: pointer;
-}
+} */
 
 
 img{
@@ -102,9 +106,9 @@ img{
 
 h2{
   font-size: 28px;
-  color: #d81b60;
+  /* color: #d81b60; */
   margin-top: 40px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .price-list{
@@ -269,7 +273,8 @@ h2{
 
 .italic{
   font-family: 'Pacifico', cursive;
-  font-size: 18px;
+  font-size: 26px;
+  letter-spacing: 4px;
   font-weight: normal;
   text-transform: lowercase;
   margin-left: -1px;
@@ -370,3 +375,57 @@ h2{
 
 
 
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+  color: #333;
+  background-color: #fffafc;
+}
+
+h1, h2, h3 {
+  color: #222;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.text-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff0f6;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.text-container p {
+  margin-bottom: 1em;
+}
+
+.title-line {
+  border: none;
+  border-top: 3px solid #ff85b3;
+  width: auto;
+  margin: 10px 0 20px;
+}
+
+button#toggleBtn {
+  margin-top: 20px;
+  background-color: #ff85b3;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button#toggleBtn:hover {
+  background-color: #ff5e9c;
+}
+
+.about_me {
+  font-size: 18px;
+  color: #444;
+}
